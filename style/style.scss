@@ -1,0 +1,146 @@
+$header1: 3rem;
+$header2: 2.5rem;
+$header3: 2rem;
+$text: 2.5rem;
+$blue: #4570ff;
+$bg-color: #154353;
+$text-color: #2c2c2c;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    width: 100%;
+  }
+  .intro,
+  .projects,
+  .contact {
+    min-height: 87.5vh;
+  }
+  .intro {
+    h2 {
+      font-size: 6rem;
+    }
+    h3 {
+      font-size: 5rem;
+    }
+  }
+  .travelly,
+  .elena {
+    img {
+      width: 90%;
+    }
+  }
+
+  .form-section {
+    form {
+      width: 100%;
+      padding: 3rem;
+    }
+  }
+  .image-section {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  html {
+    font-size: 45%;
+  }
+  .main-head {
+    width: 100%;
+    margin: 0;
+  }
+  nav {
+    .logo {
+      @include flex(center, center, row);
+      flex: 1 1 40rem;
+    }
+    ul {
+      flex: 1 1 60rem;
+      margin-top: 20px;
+    }
+  }
+  .intro {
+    width: 90%;
+    margin: 40px auto 40px auto;
+    h2 {
+      font-size: 7rem;
+    }
+    h3 {
+      font-size: 6rem;
+    }
+    p {
+      width: 90%;
+      margin: auto;
+      font-size: 2.8rem;
+    }
+  }
+  .intro-text,
+  .intro-images {
+    @include flex(center, center, column);
+    flex: 1 1 50rem;
+  }
+  .intro-text {
+    text-align: center;
+    order: 2;
+  }
+
+  .intro-images {
+    min-height: 320px;
+    margin-bottom: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-radius: 200px;
+    order: 1;
+  }
+  .developer svg {
+    display: block;
+    height: 320px;
+  }
+  .projects {
+    margin: 5% auto;
+  }
+
+  .travelly,
+  .elena {
+    flex: 1 1 50rem;
+    img {
+      width: 100%;
+    }
+  }
+  .contact {
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .form-section {
+    flex: 1 1 50rem;
+    order: 2;
+    form {
+      width: 100%;
+    }
+  }
+  .image-section {
+    flex: 1 1 50rem;
+    order: 1;
+    padding: 0;
+  }
+  svg {
+    height: 200px;
+  }
+}

@@ -1,0 +1,151 @@
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 6vh;
+  width: 60%;
+  flex-wrap: wrap;
+
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 1 20rem;
+    img {
+      width: 5rem;
+    }
+    h1 {
+      margin: 2rem;
+    }
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 20rem;
+  }
+}
+.active {
+  background: $text-color;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+
+.intro {
+  min-height: 86vh;
+  width: 95%;
+  margin: 0 0 0 auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+
+  h2 {
+    font-size: 7rem;
+    color: $blue;
+    display: inline-block;
+  }
+  h3 {
+    font-size: 6rem;
+    padding: 2rem 0rem;
+  }
+  p {
+    padding-top: 2rem;
+    color: $text-color;
+  }
+}
+.intro-text,
+.intro-images {
+  flex: 1 1 40rem;
+}
+.intro-images {
+  background-color: $blue;
+  min-height: 86vh;
+  border-top-left-radius: 50vw;
+  border-bottom-left-radius: 50vw;
+}
+.developer svg {
+  width: 100%;
+}
+
+.intro-social {
+  margin-top: 4rem;
+  a {
+    padding-right: 4rem;
+    img {
+      width: 5rem;
+    }
+  }
+}
+
+.intro-social img:hover {
+  filter: invert(38%) sepia(100%) saturate(334%) hue-rotate(182deg)
+    brightness(88%) contrast(91%);
+}
+
+.display-none {
+  display: none;
+}
+
+footer {
+  background-color: rgb(206, 206, 206);
+  min-height: 6vh;
+  padding: 0 5%;
+  @include flex(flex-start, center, row);
+  h4 {
+    flex: 1 1 40rem;
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+    img {
+      margin: auto;
+      display: block;
+      width: 4rem;
+      &:hover {
+        filter: invert(38%) sepia(100%) saturate(334%) hue-rotate(182deg)
+          brightness(88%) contrast(91%);
+      }
+    }
+  }
+}
+
+#clock {
+  animation: clock 5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+#head {
+  animation: head 1s infinite alternate linear;
+}
+#big-leaf {
+  animation: leaf 1.8s linear infinite alternate;
+  transform-origin: bottom;
+}
+#small-leaf {
+  animation: leaf 2s linear infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes head {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(0.5%);
+  }
+}
+@keyframes leaf {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
