@@ -1,5 +1,5 @@
-.projects {
-  width: 90%;
+.projects-page {
+  width: 92%;
   margin: auto;
   min-height: 86vh;
   @include flex(space-between, center, row);
@@ -9,12 +9,18 @@
     margin: 2rem;
   }
 }
-.travelly,
-.elena {
+.project {
   flex: 1 1 40rem;
   img {
-    width: 70%;
-    border-radius: 5%;
-    border: 2px solid black;
+    width: 90%;
+    border-radius: 1rem;
+    border: 0.7rem double black;
+    cursor:pointer;
+    transition: 0.3s;
+  }
+
+  img:hover {
+  transform: scale(1.04);
   }
 }
+
