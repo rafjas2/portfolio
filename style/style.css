@@ -674,6 +674,9 @@ footer ul img:hover {
         -ms-flex-order: 2;
             order: 2;
   }
+  .intro-text p {
+    text-align: justify;
+  }
   .intro-images {
     min-height: 320px;
     margin-bottom: 40px;

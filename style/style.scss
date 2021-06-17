@@ -99,6 +99,9 @@ $text-color: #2c2c2c;
     text-align: center;
     order: 2;
   }
+  .intro-text p {
+    text-align: justify;
+  }
 
   .intro-images {
     min-height: 320px;
