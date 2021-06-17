@@ -61,6 +61,7 @@ $text-color: #2c2c2c;
   html {
     font-size: 45%;
   }
+ 
   .main-head {
     width: 100%;
     margin: 0;
@@ -69,6 +70,7 @@ $text-color: #2c2c2c;
     .logo {
       @include flex(center, center, row);
       flex: 1 1 40rem;
+      margin-top: 2rem;
     }
     ul {
       flex: 1 1 60rem;
@@ -101,6 +103,7 @@ $text-color: #2c2c2c;
   }
   .intro-text p {
     text-align: justify;
+    padding: 2rem 0rem 0rem 0rem;
   }
 
   .intro-images {

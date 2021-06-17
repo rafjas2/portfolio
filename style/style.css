@@ -90,10 +90,6 @@ nav .logo img {
   width: 5rem;
 }
 
-nav .logo h1 {
-  margin: 2rem;
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +148,7 @@ nav ul {
 }
 
 .intro p {
-  padding-top: 2rem;
+  padding: 2rem 3rem 0rem 0rem;
   color: #2c2c2c;
 }
 
@@ -627,6 +623,7 @@ footer ul img:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 40rem;
             flex: 1 1 40rem;
+    margin-top: 2rem;
   }
   nav ul {
     -webkit-box-flex: 1;
@@ -676,6 +673,7 @@ footer ul img:hover {
   }
   .intro-text p {
     text-align: justify;
+    padding: 2rem 0rem 0rem 0rem;
   }
   .intro-images {
     min-height: 320px;
