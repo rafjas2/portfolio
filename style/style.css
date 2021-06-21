@@ -116,7 +116,7 @@ nav ul {
 }
 
 .intro {
-  min-height: 86vh;
+  min-height: 88vh;
   width: 95%;
   margin: 0 0 0 auto;
   -ms-flex-wrap: wrap;
@@ -341,7 +341,7 @@ footer ul img:hover {
 .projects-page {
   width: 92%;
   margin: auto;
-  min-height: 86vh;
+  min-height: 88vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +387,7 @@ footer ul img:hover {
 .contact {
   width: 90%;
   margin: auto;
-  min-height: 86vh;
+  min-height: 88vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: -webkit-box;
